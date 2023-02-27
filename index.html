@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Alex's Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,28 +14,188 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <meta name="theme-color" content="#fafafa">
 
+<!-- Google fonts + CSS -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700/Poppins:500,700" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+  <!-- FontAwesome CDN version 5.5 -->
+  <!-- <script src="https://kit.fontawesome.com/5a97e112a6.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
+    <header>
+        <div class="content-wrapper">
+            <nav>
+                <ul>
+                    <li> <a href="" target="_blank">About</a></li>
+                    <li> <a href="" target="_blank">Skills</a></li>
+                    <li> <a href="" target="_blank">Projects</a></li>
+                    <li> <a href="" target="_blank">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="home-title">
+                <h1>Hello! My name is Alexandra Côté-Lahue.</h1>
+                <h2>I’m a front-end developer who creates beautiful and responsive user experiences on the web :)</h2>
+            </div>
+        </div>
+    </header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <main>
+        <article class="portfolio">
+            <section id="about">
+                <div class="content-wrapper">
+                    <!-- <img src="img\selfie-headshot.jpg" alt="headshot"> -->
+                    <h2 class="about-header">
+                        About Me
+                        <span class="period">.</span>
+                    </h2>
+                    <h3>Hi! I'm Alexandra and I'm a front-end developer based in Montreal, Quebec. Enchantée!👋</h3>
+                    <h4>I’m passionate about creating engaging online experiences and bringing ideas to life in the digital world. I’m currently looking for a front-end developer role. When I’m not coding, you can find me playing rugby, painting, listening to a podcast, or spending time with my cat Millie. 🐈</h4>
+                    <h4>I started making simple websites for fun when I was a teenager and would enjoy personalizing these sites for my friends. Even after taking a completely different academic and professional path, I still enjoy the process of getting to know the user and creating something wonderful that is tailored to fit their needs!</h4>
+                    <h4>I have a strong background in Psychology and I hold a B.A. in Psychology and Business Management. I also have experience with entrepreneurial projects and non-profits. I thrive in collaborative environments and I always bring enthusiasm to the table. On that note, I can’t wait to work with you!        
+                    </h4>
+                </div>
+            </section>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+            <section id="skills">
+                <div class="content-wrapper">
+                    <h2 class="skills-header">
+                        Skills & Tools
+                        <span class="period">.</span>
+                    </h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Flexbox & Grid</li>
+                        <li>APIs</li>
+                        <li>Wordpress</li>
+                        <li>Web Hosting</li>
+                        <li>Git & GitHub</li>
+                        <li>Responsive Design</li>
+                        <li>Chrome DevTools</li>
+                        <li>Visual Studio Code</li>
+                        <li>Photoshop</li>
+                        <li>CodeSandbox</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="content-wrapper">
+                    <h2 class="projects-header">
+                        Projects
+                        <span class="period">.</span>
+                    </h2>
+                    <div class="project-wrapper">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item">
+                                <figure></figure>
+                                <h4>Unplugged</h4>
+                                <p class="project-description">
+                                    A multi-page responsive website coded with Flexbox. The versatile design has several sections, including a Cards design pattern which can be repurposed for different sites.
+                                </p>
+                                <p class="skills">
+                                    <span>Skills: </span>HTML, CSS, Flexbox, Media Queries, Responsive Typography
+                                </p>
+                                <p class="skills">
+                                    <span>Tools: </span>GitHub, Photoshop, Visual Studio Code, Chrome DevTools
+                                </p>
+                                <a class="project-link" href="https://itsyagirlalexcote.github.io/unplugged-retreat/" target="_blank">live page</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item">
+                                <figure></figure>
+                                <h4>GitHub Repo Gallery</h4>
+                                <p class="project-description">
+                                    A customized responsive gallery of my repositories using GitHub’s API to pull data from my GitHub profile. Click on any of the repos to see more details.
+                                </p>
+                                <p class="skills">
+                                    <span>Skills: </span>HTML, CSS, JavaScript, APIs
+                                </p>
+                                <p class="skills">
+                                    <span>Tools: </span>GitHub
+                                </p>
+                                <a class="project-link" href="https://itsyagirlalexcote.github.io/github-repo-gallery/" target="_blank">live page</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item">
+                                <figure></figure>
+                                <h4>Guess the Word Game</h4>
+                                <p class="project-description">
+                                    An interactive JavaScript game where players can guess a randomly generated word, one letter at a time. If the player guesses all the letters correctly in as many as eight attempts, they win!
+                                </p>
+                                <p class="skills">
+                                    <span>Skills: </span>HTML, CSS, JavaScript, Responsive Design
+                                </p>
+                                <p class="skills">
+                                    <span>Tools: </span>
+                                </p>
+                                <a class="project-link" href="https://itsyagirlalexcote.github.io/guess-the-word/" target="_blank">live page</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item">
+                                <figure></figure>
+                                <h4>Sticky Notes App</h4>
+                                <p class="project-description">
+                                    Greenfield project creating a Sticky Notes web app. Multiple components are used to build the classic sticky note UI that allows the user to add, edit, delete and search for notes.
+                                </p>
+                                <p class="skills">
+                                    <span>Skills: </span>React, JSX, Components, Data Flow
+                                </p>
+                                <p class="skills">
+                                    <span>Tools: </span>CodeSandbox
+                                </p>
+                                <a class="project-link" href="https://z4ze0r.csb.app/" target="_blank">live page</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item">
+                                <!-- <figure></figure>
+                                <h4></h4>
+                                <p class="project-description"></p>
+                                <p class="skills">
+                                    <span>Skills: </span>
+                                </p>
+                                <p class="skills">
+                                    <span>Tools: </span>
+                                </p>
+                                <a class="project-link" href="" target="_blank">live page</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+       
+
+    </main>
+
+    <footer id="contact">
+        <div class="content-wrapper">
+            <h2 class="contact-header">
+                Let's Connect
+                <span class="period">.</span>
+            </h2>
+            <div class="contact-info">
+                <address>
+                    <a class="email" href="mailto:alexcotelahue@gmail.com">alexcotelahue@gmail.com</a>
+                    <br>
+                    <div class="social-icons-container">
+                        <a href="https://www.linkedin.com/in/alexandra-cote-lahue/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                        <a href="https://github.com/itsyagirlalexcote" target="_blank" rel="noreferrer noopener">GitHub</a>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
