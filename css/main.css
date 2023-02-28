@@ -86,14 +86,47 @@ textarea {
   display: none !important;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+
+
+/**************** HEADER *********************/
+
+header {
+    padding: 40px 0 40px 0;
+}
+
+
+header, section, footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+    background-color: #FFE8D6;
+}
+
+.content.wrapper {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+figure {
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 25%;
+    vertical-align: middle;
+}
 
 .sr-only {
   border: 0;
