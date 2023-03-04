@@ -106,7 +106,7 @@ header, section, footer {
     background-color: #FFE8D6;
 }
 
-.content.wrapper {
+.content.wrapper { 
     width: 90%;
     justify-content: center;
     align-items: center;
