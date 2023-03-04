@@ -73,19 +73,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
 
 .hidden,
 [hidden] {
   display: none !important;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
 
 
 /**************** HEADER *********************/
@@ -94,7 +95,6 @@ textarea {
 header {
     padding: 40px 0 40px 0;
 }
-
 
 header, section, footer {
     width: 100%;
@@ -106,12 +106,48 @@ header, section, footer {
     background-color: #FFE8D6;
 }
 
-.content.wrapper { 
+.content.wrapper {
     width: 90%;
     justify-content: center;
     align-items: center;
 }
 
+#main-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 90%;
+}
+
+ul {
+    list-style: none;
+    top: 20%;
+    bottom: 40%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: flex;
+}
 
 /**************** ABOUT *********************/
 /--------------------------------------------/
@@ -127,7 +163,7 @@ figure {
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
-    width: 25%;
+    width: 40%;
     vertical-align: middle;
 }
 

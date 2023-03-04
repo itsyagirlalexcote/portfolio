@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Alex's Portfolio</title>
-  <meta name="description" content="">
+  <title>Alex Côté-Lahue | Front End Developer</title>
+  <meta name="description" content="Portfolio of web development projects for front-end developer Alexandra Cote-Lahue">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -28,17 +28,37 @@
 <body>
     <header>
         <div class="content-wrapper">
-            <nav>
-                <ul>
-                    <li> <a href="" target="_blank">About</a></li>
-                    <li> <a href="" target="_blank">Skills</a></li>
-                    <li> <a href="" target="_blank">Projects</a></li>
-                    <li> <a href="" target="_blank">Contact me</a></li>
+            <nav id="main-nav">
+                <ul class="nav-bar">
+                    <li class="nav-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
-            <div class="home-title">
-                <h1>Hello! My name is Alexandra Côté-Lahue.</h1>
-                <h2>I’m a front-end developer who creates beautiful and responsive user experiences on the web :)</h2>
+
+            <!-- Add Mobile Hamburger-Menu on the top right -->
+            
+            <div class="hero-title">
+                <h1>
+                    Hello! My name is Alexandra Côté-Lahue
+                    <span class="period">.</span>
+                </h1>
+                <h2>
+                    I’m a front-end developer who creates beautiful and responsive user experiences on the web 
+                    <span class="smiley">:)</span>
+
+                    <!-- Figure out how to turn smiley over or insert another type of smiley/emoji-->
+
+                </h2>
             </div>
         </div>
     </header>
@@ -46,20 +66,29 @@
     <main>
         <article class="portfolio">
             <section id="about">
-                <div class="content-wrapper">
-                    <img src="img\selfie-headshot.jpg" alt="headshot">
-                    <h2 class="about-header">
-                        About Me
-                        <span class="period">.</span>
-                    </h2>
-                    <h3>Hi! I'm Alexandra and I'm a front-end developer based in Montreal, Quebec. Enchantée!👋</h3>
-                    <h4>I’m passionate about creating engaging online experiences and bringing ideas to life in the digital world. I’m currently looking for a front-end developer role. When I’m not coding, you can find me playing rugby, painting, listening to a podcast, or spending time with my cat Millie. 🐈</h4>
+                <div class="content-wrapper about-wrapper">
+                    <figure class="profile-img-wrapper">
+                        <img src="img\selfie-headshot.jpg" alt="headshot"> 
+                    </figure>
+                    <div class="about-info">
+                        <h2 class="about-header">
+                            About Me
+                            <span class="period">.</span>
+                        </h2>
+                        <h3>Hi! I'm Alexandra and I'm a front-end developer based in Montreal, Quebec. Enchantée!👋</h3>
+                        <p class="about-text">
+                            I’m passionate about creating engaging online experiences and bringing ideas to life in the digital world. I’m currently looking for a front-end developer role. When I’m not coding, you can find me playing rugby, painting, listening to a podcast, or spending time with my cat Millie. 
+                            <a class="millie-photo" href="" target="_blank">🐈</a>
 
-                    <!-- Add an event handler to show a pic of Millie when hovering over her name -->
-                    
-                    <h4>I started making simple websites for fun when I was a teenager and would enjoy personalizing these sites for my friends. Even after taking a completely different academic and professional path, I still enjoy the process of getting to know the user and creating something wonderful that is tailored to fit their needs!</h4>
-                    <h4>I have a strong background in Psychology and I hold a B.A. in Psychology and Business Management. I also have experience with entrepreneurial projects and non-profits. I thrive in collaborative environments and I always bring enthusiasm to the table. On that note, I can’t wait to work with you!        
-                    </h4>
+                        <!-- Add an event handler to show a pic of Millie when hovering over her name -->
+                        </p>
+                        <p class="about-text">
+                            I started making simple websites for fun when I was a teenager and would enjoy personalizing these sites for my friends. Even after taking a completely different academic and professional path, I still enjoy the process of getting to know the user and creating something wonderful that is tailored to fit their needs!
+                        </p>
+                        <p class="about-text">
+                            I have a strong background in Psychology and I hold a B.A. in Psychology and Business Management. I also have experience with entrepreneurial projects and non-profits. I thrive in collaborative environments and I always bring enthusiasm to the table. On that note, I can’t wait to work with you!        
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -69,21 +98,21 @@
                         Skills & Tools
                         <span class="period">.</span>
                     </h2>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Flexbox & Grid</li>
-                        <li>APIs</li>
-                        <li>Wordpress</li>
-                        <li>Web Hosting</li>
-                        <li>Git & GitHub</li>
-                        <li>Responsive Design</li>
-                        <li>Chrome DevTools</li>
-                        <li>Visual Studio Code</li>
-                        <li>Photoshop</li>
-                        <li>CodeSandbox</li>
+                    <ul class="skills-wrapper">
+                        <li class="skill">HTML5</li>
+                        <li class="skill">CSS3</li>
+                        <li class="skill">JavaScript</li>
+                        <li class="skill">React</li>
+                        <li class="skill">Flexbox & Grid</li>
+                        <li class="skill">APIs</li>
+                        <li class="skill">Wordpress</li>
+                        <li class="skill">Web Hosting</li>
+                        <li class="skill">Git & GitHub</li>
+                        <li class="skill">Responsive Design</li>
+                        <li class="skill">Chrome DevTools</li>
+                        <li class="skill">Visual Studio Code</li>
+                        <li class="skill">Photoshop</li>
+                        <li class="skill">CodeSandbox</li>
                     </ul>
                 </div>
             </section>
@@ -212,6 +241,11 @@
                         <a href="https://github.com/itsyagirlalexcote" target="_blank" rel="noreferrer noopener">GitHub</a>
                     </div>
                 </address>
+                <p>
+                    Copyright
+                    <script>document.write(new Date().getFullYear())</script>
+                     | Alexandra Côté-Lahue
+                </p>
             </div>
         </div>
     </footer>
