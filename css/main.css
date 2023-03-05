@@ -86,6 +86,7 @@ body {
 
 body {
     line-height: 1.5;
+    font-family: 'Alike', serif;
 }
 
 
@@ -103,7 +104,7 @@ header, section, footer {
     align-content: center;
     text-align: center;
     flex-flow: row wrap;
-    background-color: #FFE8D6;
+    background-color: #F19494;
 }
 
 .content.wrapper {
@@ -118,8 +119,6 @@ header, section, footer {
     align-items: center;
     width: 90%;
 }
-
-
 
 .nav-bar {
     display: flex;
@@ -147,6 +146,18 @@ ul {
 
 li {
     display: flex;
+}
+
+.hero-title {
+    color: #453E4F;
+    line-height: 1.4;
+    font-weight: ;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 600;
 }
 
 /**************** ABOUT *********************/
