@@ -74,14 +74,21 @@ textarea {
    ========================================================================== */
 
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
+/* General Styles */
 
 html {
   font-size: 16px;
   line-height: 1.5;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Alike', serif;
+    text-align: left;
+    color:#453E4F;
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 0;
 }
 
 html,
@@ -89,23 +96,55 @@ body {
     height: 100%;
 }
 
-body {
-    font-family: 'Alike', serif;
-    font-size: 1rem;
-    text-align: center;
-    color:#453E4F;
-    font-weight: 200;
-    line-height: 1.5;
-    margin: 0;
+a {
+  color: #453E4F;
+  text-decoration: none;
+}
+
+h1 {
+  color: #453E4F;
+  font-family: 'Alike', serif;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 600;
+  width: 100%;
+}
+
+span {
+  font-weight: bold;
+}
+
+.period {
+  color:rgb(255, 0, 123);
+  font-weight: bold;
+}
+
+img {
+  width: 100%
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.project-link {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  color: #453E4F;
+}
+
+.about-header,
+.skills-header, 
+.projects-header {
+  color:#81304f;
 }
 
 
-/**************** HEADER *********************/
-
-
-header {
-    padding: 40px 0 40px 0;
-}
+/* Structural Styles */
 
 header, section, footer {
     width: 100%;
@@ -118,16 +157,63 @@ header, section, footer {
 }
 
 .content.wrapper {
-    width: 90%;
+    width: 85%;
     justify-content: center;
     align-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+    overflow-wrap:  break-word;
+    margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+nav {
+    margin-bottom: 40px;
+}
+
+#about,
+#projects,
+#skills {
+    padding: 30px 0; 
+}
+
+footer {
+  padding: 60px 0;
+}
+
+
+
+
+/**************** HEADER *********************/
+
+header .content-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 #main-nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 90%;
+    width: 80%;
+}
+
+#contact-link {
+    background-color: #F19494;
+    padding: 10px 10px;
+    border-radius: 30px;
 }
 
 .nav-bar {
@@ -139,7 +225,7 @@ header, section, footer {
     width: 90%;
 }
 
-ul {
+nav ul {
     list-style: none;
     top: 20%;
     bottom: 40%;
@@ -154,7 +240,7 @@ ul {
     padding-inline-start: 40px;
 }
 
-li {
+nav ul li {
     display: flex;
 }
 
@@ -162,27 +248,16 @@ li {
     color: #81304f;
     line-height: 1.4;
     font-weight: 900;
+    margin: 20px 0 30px 0;
+    width: 100%;
 }
 
-h1 {
-  font-size: 2.5rem;
-  line-height: 1;
-  font-weight: 600;
-}
 
-h1, h2, h3, h4, h5 {
-    overflow-wrap:  break-word;
-}
-
-.period {
-  color:rgb(255, 0, 123);
-
-}
 
 /**************** ABOUT *********************/
 
-.about-header {
-    color:#81304f;
+#about {
+  background-color: #ffffff;
 }
 
 figure {
@@ -193,38 +268,66 @@ figure {
     margin-inline-end: 40px;
 }
 
-img {
+#about img {
     overflow-clip-margin: content-box;
     overflow: clip;
-    width: 40%;
+    width: 60%;
     vertical-align: middle;
 }
 
 
 
-/**************** SKILLS *********************/
 
-.skills-header {
-    color:#81304f;
-}
+/**************** SKILLS *********************/
 
 
 
 
 /**************** PROJECTS *********************/
 
-.projects-header {
-    color:#81304f;
+#projects img {
+  width: 60%;
 }
 
+#projects h2 {
+  margin-top: 60px;
+}
 
+#projects h3 {
+  margin-bottom: 20px;
+}
 
+#projects h4 {
+  margin: 0 0 40px 0;
+}
 
+.project-description {
+  margin: 0 0 30px 0;
+}
+
+.project-link {
+  margin: 40px 0 60px 0;
+}
 
 /**************** FOOTER *********************/
 
+footer {
+    text-align: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 10px 0;
+}
+
 .contact-header {
     color:#81304f;
+}
+
+footer p {
+  margin: 20px 0;
 }
 
 
