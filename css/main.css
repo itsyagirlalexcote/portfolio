@@ -79,19 +79,29 @@ textarea {
   display: none !important;
 }
 
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 html,
 body {
     height: 100%;
 }
 
 body {
-    line-height: 1.5;
     font-family: 'Alike', serif;
+    font-size: 1rem;
+    text-align: center;
+    color:#453E4F;
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 0;
 }
 
 
 /**************** HEADER *********************/
-/---------------------------------------------/
+
 
 header {
     padding: 40px 0 40px 0;
@@ -104,7 +114,7 @@ header, section, footer {
     align-content: center;
     text-align: center;
     flex-flow: row wrap;
-    background-color: #F19494;
+    background-color:#FFE8D6;
 }
 
 .content.wrapper {
@@ -148,10 +158,10 @@ li {
     display: flex;
 }
 
-.hero-title {
-    color: #453E4F;
+.hero-title h1 {
+    color: #81304f;
     line-height: 1.4;
-    font-weight: ;
+    font-weight: 900;
 }
 
 h1 {
@@ -160,8 +170,20 @@ h1 {
   font-weight: 600;
 }
 
+h1, h2, h3, h4, h5 {
+    overflow-wrap:  break-word;
+}
+
+.period {
+  color:rgb(255, 0, 123);
+
+}
+
 /**************** ABOUT *********************/
-/--------------------------------------------/
+
+.about-header {
+    color:#81304f;
+}
 
 figure {
     display: block;
@@ -181,22 +203,29 @@ img {
 
 
 /**************** SKILLS *********************/
-/---------------------------------------------/
 
+.skills-header {
+    color:#81304f;
+}
 
 
 
 
 /**************** PROJECTS *********************/
-/-----------------------------------------------/
+
+.projects-header {
+    color:#81304f;
+}
 
 
 
 
 
 /**************** FOOTER *********************/
-/---------------------------------------------/
 
+.contact-header {
+    color:#81304f;
+}
 
 
 
@@ -266,8 +295,26 @@ img {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+
+/******** Tablet Styles *********/
+
+@media only screen and (min-width: 768px) {
+
+    body {
+      margin: 8px;
+    }
+
+}
+
+/******** Desktop Styles *********/
+
+@media only screen and (min-width: 1200px) {
+
+  body {
+
+  }
+
 }
 
 @media print,
