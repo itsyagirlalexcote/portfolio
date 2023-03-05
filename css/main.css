@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  margin: 0;
+  margin: 10px;
 }
 
 header {
@@ -280,7 +280,17 @@ figure {
 
 /**************** SKILLS *********************/
 
+.skills-wrapper p {
+    background-color: #F19494;
+    padding: 15px 0;
+    margin: 20px 0;
+    flex-flow: row wrap;
+    list-style: none;
+}
 
+.skill {
+  width: 100%;
+}
 
 
 /**************** PROJECTS *********************/
