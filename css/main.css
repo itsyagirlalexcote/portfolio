@@ -158,7 +158,7 @@ span {
 }
 
 img {
-    width: 100%
+    width: 85%
 }
 
 figure {
@@ -177,7 +177,7 @@ address {
 
 .period {
     color:rgb(255, 0, 123);
-    font-weight: bold;
+    font-size: 2rem;
 }
 
 
@@ -226,7 +226,7 @@ nav {
 }
 
 h2 {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 h3 {
@@ -242,7 +242,7 @@ h4 {
 }
 
 .project-link {
-    margin: 40px 0 60px 0;
+    margin: 40px 0 50px 0;
 }
 
 figure {
@@ -264,11 +264,11 @@ figure {
 }
 
 #contact h2 {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 footer {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 
