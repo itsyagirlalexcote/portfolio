@@ -196,7 +196,8 @@ header, section, footer {
 
 #about p,
 #projects p {
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
     text-align: left;
 }
 
@@ -245,7 +246,7 @@ h4 {
 }
 
 figure {
-    margin: 20px 0 40px 0;
+    margin: 20px 0 20px 0;
 }
 
 .skills-header {
@@ -253,7 +254,7 @@ figure {
 }
 
 .about-info h3 {
-    margin: 40px 10px 40px 10px;
+    margin: 20px auto;
     text-align: center;
     width: 90%;
 }
@@ -329,10 +330,11 @@ header h2 {
 #about h2 {
   width: 100%;
   font-weight: bold;
+  font-size: 1.75rem;
 }
 
 #profile-image {
-    width: 90%;
+    width: 60%;
 }
 
 #about h3,
@@ -349,6 +351,7 @@ header h2 {
 #projects h2 {
     width: 100%;
     font-weight: bold;
+    font-size: 1.75rem;
 }
 
 .project-item-wrapper {
@@ -387,13 +390,15 @@ header h2 {
     color: #453E4F;
 }
 
-#skills h2 {
-  margin: 40px 0 40px 0;
-  font-weight: bold;
+#skills .content-wrapper {
+  width: 85%;
 }
 
-.skills-wrapper {
-
+#skills h2 {
+  margin: 30px 0 40px 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.75rem;
 }
 
 .skills-wrapper p {
@@ -403,8 +408,8 @@ header h2 {
   width: 100%;
   flex-flow: row wrap;
   text-transform: uppercase;
-  padding: 15px 0;
-  margin: 20px 0;
+  padding: 10px 0;
+  margin: 15px 0;
 }
 
 .skill {
@@ -431,6 +436,7 @@ footer .content-wrapper {
 .contact-header {
     color:#81304f;
     font-weight: bold;
+    font-size: 1.75rem;
 }
 
 footer .social-icons {
