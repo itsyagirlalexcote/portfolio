@@ -158,7 +158,7 @@ span {
 }
 
 img {
-    width: 85%
+    width: 65%
 }
 
 figure {
@@ -242,7 +242,7 @@ h4 {
 }
 
 .project-link {
-    margin: 40px 0 50px 0;
+    margin: 10px 0 70px 0;
 }
 
 figure {
@@ -294,7 +294,7 @@ nav #contact-link {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -331,6 +331,7 @@ header h2 {
   width: 100%;
   font-weight: bold;
   font-size: 1.75rem;
+  margin: 30px 0 40px 0;
 }
 
 #profile-image {
@@ -352,6 +353,7 @@ header h2 {
     width: 100%;
     font-weight: bold;
     font-size: 1.75rem;
+    margin: 30px 0 40px 0;
 }
 
 .project-item-wrapper {
@@ -441,7 +443,7 @@ footer .content-wrapper {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 footer ul {
@@ -536,9 +538,76 @@ footer .social-icons li i {
 
 @media only screen and (min-width: 768px) {
 
-    body {
-      margin: 8px;
-    }
+  body {
+    margin: 8px;
+  }
+
+  nav ul {
+      justify-content: flex-end;
+      padding-left: 25px;
+      padding-right: 0;
+  }
+
+  li {
+    padding-left: 30px;
+  }
+  
+  .hero-title h1,
+  #about h2,
+  #projects h2,
+  #skills h2 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .content-wrapper {
+    max-width: 640px;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+  }
+
+  #skills {
+    padding-bottom: 80px;
+  }
+
+  .skills-wrapper p {
+    padding: 15px 0;
+    width: 45%;
+  }
+
+  .skill {
+    width: 45%;
+  }
+
+  #projects {
+    padding-top: 80px;
+  }
+
+  .projects-header {
+    margin: 0 0 60px 0;
+  }
+
+  .project-item-wrapper {
+    justify-content: space-around;
+  }
+
+  .project-item {
+    width: 45%;
+  }
+
+  .project-description {
+    width: 95%;
+    margin: 0 0 30px 0;
+  }
 
 }
 
@@ -546,9 +615,10 @@ footer .social-icons li i {
 
 @media only screen and (min-width: 1200px) {
 
-  body {
-
+  li {
+    padding-left: 40px;
   }
+  
 
 }
 
