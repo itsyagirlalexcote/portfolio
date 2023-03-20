@@ -402,7 +402,8 @@ header h2 {
   font-size: 1.75rem;
 }
 
-.skills-wrapper p {
+/* Uncomment bellow to put skills in pink boxes */
+/* .skills-wrapper li {
   background-color: #F19494;
   display: flex;
   justify-content: center;
@@ -411,7 +412,7 @@ header h2 {
   text-transform: uppercase;
   padding: 10px 0;
   margin: 15px 0;
-}
+} */
 
 .skill {
   width: 100%;
@@ -565,7 +566,7 @@ footer .social-icons li i {
   }
 
   #skills {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   .skills-wrapper p {
