@@ -128,8 +128,7 @@ h5 {
 }
 
 .project-link,
-.skill-wrapper p {
-    text-transform: uppercase;
+.skill-wrapper li {
     font-size: 1.125rem;
     color: #453E4F;
 }
@@ -540,16 +539,6 @@ footer .social-icons li i {
 
   body {
     margin: 8px;
-  }
-
-  nav ul {
-      justify-content: flex-end;
-      padding-left: 25px;
-      padding-right: 0;
-  }
-
-  li {
-    padding-left: 30px;
   }
   
   .hero-title h1,
