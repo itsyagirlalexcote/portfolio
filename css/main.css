@@ -376,7 +376,7 @@ header h2 {
 
 .project-item figure {
     width: 100%;
-    filter: drop-shadow(1px 2px 6px lightgrey);
+    filter: drop-shadow(3px 6px 12px lightgrey);
 }
 
 .project-link {
@@ -586,9 +586,9 @@ footer .social-icons li i {
     margin: 0 0 60px 0;
   }
 
-  .project-item-wrapper {
+  /* .project-item-wrapper {
     justify-content: space-around;
-  }
+  } */
 
   .project-item {
     width: 45%;
