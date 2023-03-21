@@ -157,7 +157,8 @@ span {
 }
 
 img {
-    width: 65%
+    width: 65%;
+    max-width: 330px;
 }
 
 figure {
@@ -190,7 +191,7 @@ header, section, footer {
 }
 
 .content.wrapper {
-    width: 90%;
+    width: 85%;
 }
 
 #about p,
@@ -537,11 +538,30 @@ footer .social-icons li i {
 /******** Tablet Styles *********/
 
 @media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
 
-  body {
-    margin: 8px;
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
   }
-  
+
+   /* font styles */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+      font-size: 1.25rem;
+  }
+
   .hero-title h1,
   #about h2,
   #projects h2,
@@ -549,14 +569,17 @@ footer .social-icons li i {
     font-size: 2.5rem;
   }
 
-  h4 {
-    font-size: 1.25rem;
+  /* Header styles */
+  header {
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 
-  .content-wrapper {
-    max-width: 640px;
+  nav {
+    margin: 0 0 80px 0;
   }
 
+  /* Skills styles */
   .skills-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -578,8 +601,13 @@ footer .social-icons li i {
     width: 45%;
   }
 
+  /* Projects styles */
   #projects {
     padding-top: 80px;
+  }
+
+  .project-item-wrapper {
+    justify-content: space-around;
   }
 
   .projects-header {
@@ -592,11 +620,11 @@ footer .social-icons li i {
 
   .project-item {
     width: 45%;
+    align-items: center;
   }
 
   .project-description {
     width: 95%;
-    margin: 0 0 30px 0;
   }
 
 }
@@ -604,10 +632,7 @@ footer .social-icons li i {
 /******** Desktop Styles *********/
 
 @media only screen and (min-width: 1200px) {
-
-  li {
-    padding-left: 40px;
-  }
+  
   
 
 }
