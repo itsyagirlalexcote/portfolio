@@ -199,6 +199,7 @@ header, section, footer {
     width: 90%;
     margin: 20px auto;
     text-align: left;
+    max-width: 50ch;
 }
 
 /* set the margins & paddings for each section.....*/
