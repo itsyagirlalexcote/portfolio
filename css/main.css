@@ -580,6 +580,12 @@ footer .social-icons li i {
     margin: 0 0 80px 0;
   }
 
+  /* About Styles */
+  
+  #profile-image {
+    width: 40%;
+  }
+
   /* Skills styles */
   .skills-wrapper {
     display: flex;
@@ -628,12 +634,68 @@ footer .social-icons li i {
     width: 95%;
   }
 
+  .contact-info {
+    line-height: 3;
+  }
+
 }
 
-/******** Desktop Styles *********/
+
+
+/******** Landscape tablets and iPad Pro *********/
+
+@media only screen and (min-width: 1024px) {
+
+  /* Landscape tablets and iPad Pro here */
+  .content-wrapper {
+    max-width: 900px;
+  }
+
+  .about-info h3 {
+    font-size: 3.5rem;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
-  
+  /* Desktop styles here */
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 1450px;
+  }
+
+   /* font styles */
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+      font-size: 1.5rem;
+  }
+
+
+  /* Header styles */
+
+
+  /* About styles */
+
+
+  /* Skills styles */
+
+
+
+  .contact-info {
+    line-height: 3;
+  }
+
   
 
 }
