@@ -562,11 +562,18 @@ footer .social-icons li i {
   h4 {
       font-size: 1.25rem;
   }
+  
+  #about p,
+  #projects p,
+  #contact p {
+    font-size: 1.25rem; 
+  }
 
   .hero-title h1,
   #about h2,
   #projects h2,
-  #skills h2 {
+  #skills h2, 
+  #contact h2 {
     font-size: 2.5rem;
   }
 
@@ -652,7 +659,7 @@ footer .social-icons li i {
   }
 
   .about-info h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
 }
@@ -662,7 +669,7 @@ footer .social-icons li i {
 
   /* General styles */
   .content-wrapper {
-    max-width: 1450px;
+    width: 80%;
   }
 
    /* font styles */
@@ -695,7 +702,7 @@ footer .social-icons li i {
 
   .about-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row wrap;
   }
@@ -706,18 +713,21 @@ footer .social-icons li i {
 
   #about p {
     max-width: 70ch;
-    font-size: 1.25rem
+    font-size: 1rem
   }
 
   /* Skills styles */
 
 
+/* Footer styles */
 
   .contact-info {
     line-height: 3;
   }
 
-  
+  .contact-info a {
+    font-size: 1.25rem;
+  }
 
 }
 
