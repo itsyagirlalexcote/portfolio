@@ -686,7 +686,21 @@ footer .social-icons li i {
 
 
   /* About styles */
+  
+  #profile-image {
+    width: 750%;
+    
+  }
 
+  .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-wrap;
+  }
+
+  .about-info {
+    width: 55%
+  }
 
   /* Skills styles */
 
