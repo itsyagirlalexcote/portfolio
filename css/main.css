@@ -170,14 +170,21 @@ address {
 }
 
 .about-header,
-.skills-header, 
-.projects-header {
+.skills-header {
     color:#81304f;
+}
+
+.projects-header {
+  color:#ffffff;
 }
 
 .period {
     color:rgb(255, 0, 123);
     font-size: 2rem;
+}
+
+#projects .period {
+  color:#ffba81;
 }
 
 
@@ -192,6 +199,10 @@ header, section, footer {
 
 .content.wrapper {
     width: 85%;
+}
+
+#projects {
+  background-color: #a56876;
 }
 
 #about p,
@@ -294,6 +305,11 @@ nav #contact-link {
   border-radius: 30px;
 }
 
+nav #contact-link:hover {
+    background-color: #f5c5c5;
+    color: #453E4F;
+}
+
 nav ul {
     display: flex;
     justify-content: space-evenly;
@@ -349,6 +365,10 @@ header h2 {
 #projects,
 #skills {
     width: 100%;
+}
+
+.project-item-wrapper {
+  color: #ffffff;
 }
 
 #projects h2 {
@@ -671,8 +691,24 @@ footer .social-icons li i {
     max-width: 900px;
   }
 
+  header {
+    padding-bottom: 100px;
+  }
+
   .about-info h3 {
     font-size: 2rem;
+  }
+
+  #about,
+  #skills,
+  #projects {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  footer {
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 
 }
