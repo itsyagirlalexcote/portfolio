@@ -269,7 +269,7 @@ figure {
     font-size: 1.75rem;
     margin: 20px auto;
     text-align: center;
-    width: 90%;
+    width: 80%;
 }
 
 .about-text {
@@ -702,6 +702,7 @@ footer .social-icons li i {
 
   .about-info h3 {
     font-size: 2rem;
+    width: 70%;
   }
 
   #about,
@@ -763,6 +764,9 @@ footer .social-icons li i {
 
   .about-info {
     width: 55%
+  }
+  .about-info h3 {
+    width: 80%;
   }
 
   #about p {
