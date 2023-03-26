@@ -88,7 +88,7 @@ body {
 ul,
 ol {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -255,6 +255,7 @@ figure {
 }
 
 .about-info h3 {
+    font-size: 1.75rem;
     margin: 20px auto;
     text-align: center;
     width: 90%;
@@ -281,7 +282,7 @@ header {
 }
 
 header nav ul li {
-  font-size: 1.75rem;
+  font-size: 1rem;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -305,8 +306,8 @@ nav ul {
     line-height: 1.4;
     font-weight: 900;
     text-align: center;
-    margin: 20px 20px 30px 20px;
-    width: 90%;
+    margin: 30px auto;
+    width: 80%;
 }
 
 header h1 {
@@ -314,9 +315,9 @@ header h1 {
 }
 
 header h2 {
-    width: 90%;
+    width: 80%;
     text-align: center;
-    margin: 0px 20px;
+    margin: auto;
 }
 
 
@@ -445,11 +446,11 @@ footer .content-wrapper {
 
 footer .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 footer ul {
-  width: 100%;
+  width: 40%;
 }
 
 footer .social-icons li {
@@ -463,6 +464,10 @@ footer .social-icons li {
 footer .social-icons li i {
   font-size: 1.875rem;
   color: #453e4f;
+}
+
+.contact-info {
+  line-height: 3;
 }
 
 
@@ -596,10 +601,11 @@ footer .social-icons li i {
   /* Skills styles */
   .skills-wrapper {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;
+    width: 60%;
     flex-flow: row wrap;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    margin: auto;
   }
 
   #skills {
@@ -613,6 +619,11 @@ footer .social-icons li i {
 
   .skill {
     width: 45%;
+  }
+
+  #skills li {
+    text-align: left;
+    font-size: 1.25rem;
   }
 
   /* Projects styles */
@@ -641,8 +652,10 @@ footer .social-icons li i {
     width: 95%;
   }
 
-  .contact-info {
-    line-height: 3;
+  /* Footer styles */
+
+  address {
+    font-size: 1.25rem;
   }
 
 }
