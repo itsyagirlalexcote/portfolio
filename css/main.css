@@ -293,7 +293,7 @@ header {
 }
 
 header nav ul li {
-  font-size: 1rem;
+  font-size: 0.75rem;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -603,6 +603,11 @@ footer .social-icons li i {
   }
 
   /* Header styles */
+
+  header nav ul li {
+    font-size: 1rem;
+  }
+
   header {
     padding-top: 60px;
     padding-bottom: 80px;
