@@ -184,6 +184,9 @@ header, section, footer {
 
 
 /* ------------ Base Header - Footer Styles ------------ */
+#projects {
+  background-color: #724852;
+}
 
 
 
@@ -364,6 +367,141 @@ footer .social-icons li i {
 #about p {
     color: #4a4f3e;
 }
+
+/**** About - Millie Pic - button */
+.about-text .millie {
+  width: 80%;
+  max-width: 550px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  background: #a56876;
+  padding: 1em 1em 1em;
+  border-radius: 10px;
+}
+
+.modal img {
+  width: 70%;
+}
+
+.modal.show-modal {
+  display: block;
+}
+
+.modal .modal-x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.5em;
+}
+
+.modal-x {
+  color: #ffffff;
+}
+
+.modal .modal-x:hover {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+button {
+  background: none;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+button:hover {
+  background-color:#fcd7d3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+/**** About - Millie Pic - button */
+.about-text .millie {
+  width: 80%;
+  max-width: 550px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  background: #a56876;
+  padding: 1em 1em 1em;
+  border-radius: 10px;
+}
+
+#projects h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin: 30px 0 40px 0;
+}
+
+.modal.show-modal {
+  display: block;
+}
+
+.modal .modal-x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.5em;
+}
+
+.modal-x {
+  color: #ffffff;
+}
+
+.modal .modal-x:hover {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+button {
+  background: none;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+button:hover {
+  background-color:#fcd7d3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: 0;
+}
+
 
 .about-info h3 {
     font-weight: 400;
