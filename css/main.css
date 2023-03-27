@@ -381,9 +381,9 @@ header h2 {
   width: 75%;
 }
 
-.modal .show-modal {
+/* .modal .show-modal {
   display: block;
-}
+} */
 
 .modal .modal-x {
   position: absolute;
