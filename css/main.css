@@ -35,41 +35,41 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
+ /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -113,28 +113,25 @@ h2 {
     line-height: 1.5;
     width: 100%;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 h3 {
     font-size: 1.75rem;
+    margin-bottom: 20px;
 }
 
 h4 {
     font-size: 1.25rem;
+    margin: 0 0 40px 0;
 }
 
 h5 {
     font-size: 1.5rem;
 }
 
-.project-link,
-.skill-wrapper li {
-    font-size: 1.125rem;
-    color: #453E4F;
-}
-
-.about-info h3 {
-    font-weight: 400;
+h1, h2, h3, h4, h5 {
+    margin: 0;
 }
 
 h3,
@@ -144,6 +141,10 @@ h6 {
     font-family: 'Alike', serif;
     line-height: 1.5;
     width: 100%
+}
+
+p {
+    margin: 10px;
 }
 
 p,
@@ -162,33 +163,17 @@ img {
 }
 
 figure {
-    margin: 0;
+    margin: 20px 0 20px 0;
 }
 
 address {
     font-style: normal;
 }
 
-.about-header,
-.skills-header {
-    color:#81304f;
+.content.wrapper {
+    width: 85%;
 }
 
-.projects-header {
-  color:#ffffff;
-}
-
-.period {
-    color:rgb(255, 0, 123);
-    font-size: 2rem;
-}
-
-#projects .period {
-  color:#ffba81;
-}
-
-
-/* Structural Styles */
 header, section, footer {
     display: flex;
     justify-content: center;
@@ -197,133 +182,17 @@ header, section, footer {
     background-color:#FFE8D6;
 }
 
-.content.wrapper {
-    width: 85%;
-}
 
-#projects {
-  background-color: #724852;
-}
+/* ------------ Base Header - Footer Styles ------------ */
 
-#about p,
-#projects p {
-    width: 90%;
-    margin: 20px auto;
-    text-align: left;
-    max-width: 50ch;
-}
 
-/* set the margins & paddings for each section.....*/
-h1, h2, h3, h4, h5 {
-    margin: 0;
-}
 
-p {
-  margin: 10px;
-}
+/* Header Styles */
 
 header {
+    background-color: #ffe8d6;
     padding-top: 30px;
     padding-bottom: 40px;
-}
-
-nav {
-    margin-bottom: 40px;
-}
-
-#about,
-#projects,
-#skills {
-    padding: 30px 0; 
-}
-
-h2 {
-    margin-top: 30px;
-}
-
-h3 {
-    margin-bottom: 20px;
-}
-
-h4 {
-    margin: 0 0 40px 0;
-}
-
-.project-description {
-    margin: 0 0 30px 0;
-}
-
-.project-link {
-    margin: 10px 0 70px 0;
-}
-
-figure {
-    margin: 20px 0 20px 0;
-}
-
-.skills-header {
-    margin-bottom: 20px;
-}
-
-.about-info h3 {
-    font-size: 1.75rem;
-    margin: 20px auto;
-    text-align: center;
-    width: 80%;
-}
-
-.about-text {
-    margin: 0 0 30px 0;
-}
-
-#contact h2 {
-    margin-bottom: 30px;
-}
-
-footer {
-    padding: 40px 0;
-}
-
-
-
-
-/**************** Base Header Styles *******************/
-header {
-  background-color: #ffe8d6;
-}
-
-header nav ul li {
-  font-size: 0.75rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-nav #contact-link {
-  background-color: #F19494;
-  padding: 10px 10px;
-  border-radius: 30px;
-}
-
-nav #contact-link:hover {
-    background-color: #f5c5c5;
-    color: #453E4F;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.hero-title h1 {
-    color: #81304f;
-    line-height: 1.4;
-    font-weight: 900;
-    text-align: center;
-    margin: 30px auto;
-    width: 80%;
 }
 
 header h1 {
@@ -336,121 +205,40 @@ header h2 {
     margin: auto;
 }
 
-
-/**************** Mobile Styles - Homepage *************/
-
-/* About */
-#about {
-    background-color: #ffffff;
-    width: 100%;
+nav {
+    margin-bottom: 40px;
 }
 
-#about h2 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 1.75rem;
-  margin: 30px 0 40px 0;
-}
-
-#profile-image {
-    width: 60%;
-}
-
-#about h3,
-#about p {
-    color: #4a4f3e;
-}
-
-/* PORTFOLIO - Skills and Projects */
-#projects,
-#skills {
-    width: 100%;
-}
-
-.project-item-wrapper {
-  color: #ffffff;
-}
-
-#projects h2 {
-    width: 100%;
+header nav ul li {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
     font-weight: bold;
-    font-size: 1.75rem;
-    margin: 30px 0 40px 0;
+    text-transform: uppercase;
 }
-
-.project-item-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
-}
-
-.project-item {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-item h4 {
-    font-weight: bold;
-}
-
-.project-item figure {
-    width: 100%;
-    filter: drop-shadow(3px 6px 12px lightgrey);
-}
-
-.project-item figure:hover {
-    filter: grayscale();
-}
-
-.project-link {
-    background-color: #453E4F;
-    padding: .75rem 3.75rem;
+  
+nav #contact-link {
+    background-color: #F19494;
+    padding: 10px 10px;
     border-radius: 30px;
-    color: #FFFFFF;
+}
+  
+nav #contact-link:hover {
+      background-color: #f5c5c5;
+      color: #453E4F;
+}
+  
+nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      padding-left: 20px;
+      padding-right: 20px;
 }
 
-.project-link:hover {
-    background-color: #CAC4D1;
-    color: #453E4F;
-}
-
-#skills .content-wrapper {
-  width: 85%;
-}
-
-#skills h2 {
-  margin: 30px 0 40px 0;
-  width: 100%;
-  font-weight: bold;
-  font-size: 1.75rem;
-}
-
-/* Uncomment bellow to put skills in pink boxes */
-/* .skills-wrapper li {
-  background-color: #F19494;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-flow: row wrap;
-  text-transform: uppercase;
-  padding: 10px 0;
-  margin: 15px 0;
-} */
-
-.skill {
-  width: 100%;
-}
-
-
-
-/**************** FOOTER *********************/
+/* Footer Styles */
 
 footer {
     background-color: #ffffff;
+    padding: 40px 0;
 }
 
 footer .content-wrapper {
@@ -466,6 +254,10 @@ footer .content-wrapper {
     color:#81304f;
     font-weight: bold;
     font-size: 1.75rem;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
 }
 
 footer .social-icons {
@@ -500,236 +292,424 @@ footer .social-icons li i {
 
 
 
+/* --------- Mobile Styles - Sections --------- */
+
+/* General Sections */
+
+.about-header,
+.skills-header {
+    color:#81304f;
+}
+
+.project-link,
+.skill-wrapper li {
+    font-size: 1.125rem;
+    color: #453E4F;
+}
+
+.period {
+    color:rgb(255, 0, 123);
+    font-size: 2rem;
+}
+
+#about p,
+#projects p {
+    width: 90%;
+    margin: 20px auto;
+    text-align: justify;
+    max-width: 50ch;
+}
+
+#about,
+#projects,
+#skills {
+    padding: 30px 0; 
+}
+
+#projects,
+#skills {
+    width: 100%;
+}
+
+/* Hero Area */
+
+.hero-title h1 {
+    color: #81304f;
+    line-height: 1.4;
+    font-weight: 900;
+    text-align: center;
+    margin: 30px auto;
+    width: 80%;
+}
+
+/* About */
+
+#about {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+#about h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin: 30px 0 40px 0;
+}
+
+#profile-image {
+    width: 60%;
+}
+
+#about h3,
+#about p {
+    color: #4a4f3e;
+}
+
+.about-info h3 {
+    font-weight: 400;
+    font-size: 1.75rem;
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.about-text {
+    margin: 0 0 30px 0;
+}
+
+/* Skills */
+
+.skills-header {
+    margin-bottom: 20px;
+}
+
+#skills .content-wrapper {
+    width: 85%;
+}
+  
+#skills h2 {
+    margin: 30px 0 40px 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.skill {
+    width: 100%;
+}
+
+/* Uncomment bellow to put skills in pink boxes */
+/* .skills-wrapper li {
+  background-color: #F19494;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-flow: row wrap;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin: 15px 0;
+} */
+
+
+/* Projects */
+
+#projects {
+    background-color: #724852;
+}
+
+.projects-header {
+    color:#ffffff;
+}
+
+#projects .period {
+    color:#ffba81;
+}
+
+.project-item-wrapper {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+#projects h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin: 30px 0 40px 0;
+}
+
+.project-description {
+    margin: 0 0 30px 0;
+}
+
+.project-link {
+    background-color: #453E4F;
+    padding: .75rem 3.75rem;
+    border-radius: 30px;
+    color: #FFFFFF;
+    margin: 10px 0 70px 0;
+}
+
+.project-link:hover {
+    background-color: #CAC4D1;
+    color: #453E4F;
+}
+
+.project-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item h4 {
+    font-weight: bold;
+}
+
+.project-item figure {
+    width: 100%;
+    filter: drop-shadow(3px 6px 12px lightgrey);
+}
+
+.project-item figure:hover {
+    filter: grayscale();
+}
+
+
 
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-
-
+Media Queries for Responsive Design.
+========================================================================== */
+  
+  
 /******** Tablet Styles *********/
-
+  
 @media only screen and (min-width: 768px) {
-  /*Tablet styles here*/
-
-  /* General styles */
-  .content-wrapper {
-    max-width: 640px;
-  }
-
-   /* font styles */
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-      font-size: 1.25rem;
-  }
+/*Tablet styles here*/
   
-  #about p,
-  #projects p,
-  #contact p {
-    font-size: 1.25rem; 
-  }
+/* General styles */
+    .content-wrapper {
+        max-width: 640px;
+    }
 
-  .hero-title h1,
-  #about h2,
-  #projects h2,
-  #skills h2, 
-  #contact h2 {
-    font-size: 2.5rem;
-  }
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    h4 {
+          font-size: 1.25rem;
+    }
+      
+    #about p,
+    #projects p,
+    #contact p {
+        font-size: 1.25rem; 
+    }
 
-  /* Header styles */
 
-  header nav ul li {
-    font-size: 1rem;
-  }
+    /* Header */
 
-  header {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
+    header nav ul li {
+        font-size: 1rem;
+    }
+    
+    header {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    
+    nav {
+        margin: 0 0 80px 0;
+    }
 
-  nav {
-    margin: 0 0 80px 0;
-  }
+    /* Hero-section */
 
-  /* About Styles */
-  
-  #profile-image {
-    width: 40%;
-  }
+    .hero-title h1,
+    #about h2,
+    #projects h2,
+    #skills h2, 
+    #contact h2 {
+        font-size: 2.5rem;
+    }
 
-  /* Skills styles */
-  .skills-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    flex-flow: row wrap;
-    /* text-transform: uppercase; */
-    margin: auto;
-  }
+    /* About */
 
-  #skills {
-    padding-bottom: 40px;
-  }
+    #profile-image {
+        width: 40%;
+    }
 
-  .skills-wrapper p {
-    padding: 15px 0;
-    width: 45%;
-  }
+    /* Skills */
 
-  .skill {
-    width: 45%;
-  }
+    .skills-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        flex-flow: row wrap;
+        /* text-transform: uppercase; */
+        margin: auto;
+    }
+    
+    #skills {
+        padding-bottom: 40px;
+    }
+    
+    .skills-wrapper p {
+        padding: 15px 0;
+        width: 45%;
+    }
+    
+    .skill {
+        width: 45%;
+    }
+    
+    #skills li {
+        text-align: left;
+        font-size: 1.25rem;
+    }
 
-  #skills li {
-    text-align: left;
-    font-size: 1.25rem;
-  }
+    /* Projects */
 
-  /* Projects styles */
-  #projects {
-    padding-top: 80px;
-  }
+    #projects {
+        padding-top: 80px;
+    }
+    
+    .project-item-wrapper {
+        justify-content: space-around;
+    }
+    
+    .projects-header {
+        margin: 0 0 60px 0;
+    }
 
-  .project-item-wrapper {
-    justify-content: space-around;
-  }
+    /* .project-item-wrapper {
+        justify-content: space-around;
+    } */
 
-  .projects-header {
-    margin: 0 0 60px 0;
-  }
+    .project-item {
+        width: 45%;
+        align-items: center;
+    }
 
-  /* .project-item-wrapper {
-    justify-content: space-around;
-  } */
+    .project-description {
+        width: 95%;
+    }
 
-  .project-item {
-    width: 45%;
-    align-items: center;
-  }
+    /* Footer */
 
-  .project-description {
-    width: 95%;
-  }
-
-  /* Footer styles */
-
-  address {
-    font-size: 1.25rem;
-  }
+    address {
+        font-size: 1.25rem;
+    }
 
 }
-
 
 
 /******** Landscape tablets and iPad Pro *********/
 
 @media only screen and (min-width: 1024px) {
 
-  /* Landscape tablets and iPad Pro here */
-  .content-wrapper {
-    max-width: 900px;
-  }
-
-  header {
-    padding-bottom: 100px;
-  }
-
-  .about-info h3 {
-    font-size: 2rem;
-    width: 70%;
-  }
-
-  #about,
-  #skills,
-  #projects {
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
-
-  footer {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
-
+/* Landscape tablets and iPad Pro here */
+    .content-wrapper {
+      max-width: 900px;
+    }
+  
+    header {
+      padding-bottom: 100px;
+    }
+  
+    .about-info h3 {
+      font-size: 2rem;
+      width: 70%;
+    }
+  
+    #about,
+    #skills,
+    #projects {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+  
+    footer {
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+  
 }
 
+
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
+/* Desktop styles here */
 
   /* General styles */
   .content-wrapper {
@@ -798,6 +778,7 @@ footer .social-icons li i {
 
 }
 
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
@@ -806,10 +787,10 @@ footer .social-icons li i {
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+    Print styles.
+    Inlined to avoid the additional HTTP request:
+    https://www.phpied.com/delay-loading-your-print-css/
+    ========================================================================== */
 
 @media print {
   *,
@@ -854,10 +835,10 @@ footer .social-icons li i {
     page-break-inside: avoid;
   }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+    /*
+    * Printing Tables:
+    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+    */
   thead {
     display: table-header-group;
   }
@@ -879,4 +860,3 @@ footer .social-icons li i {
     page-break-after: avoid;
   }
 }
-
