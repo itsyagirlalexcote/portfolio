@@ -363,7 +363,7 @@ header h2 {
 
 /**** About - Millie Pic - button */
 .about-text .millie {
-  width: 90%;
+  width: 80%;
   max-width: 550px;
   text-align: center;
   font-size: 1.5em;
@@ -373,17 +373,17 @@ header h2 {
   display: none;
   position: relative;
   background: #a56876;
-  padding: 2em 1em 1em;
+  padding: 1em 1em 1em;
   border-radius: 10px;
 }
 
 .modal img {
-  width: 75%;
+  width: 70%;
 }
 
-/* .modal .show-modal {
+.modal.show-modal {
   display: block;
-} */
+}
 
 .modal .modal-x {
   position: absolute;
@@ -396,8 +396,11 @@ header h2 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: #292929;
   font-size: 0.5em;
+}
+
+.modal-x {
+  color: #ffffff;
 }
 
 .modal .modal-x:hover {
