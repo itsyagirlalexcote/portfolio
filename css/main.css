@@ -402,6 +402,10 @@ header h2 {
     filter: drop-shadow(3px 6px 12px lightgrey);
 }
 
+.project-item figure:hover {
+    filter: grayscale();
+}
+
 .project-link {
     background-color: #453E4F;
     padding: .75rem 3.75rem;
@@ -486,9 +490,14 @@ footer .social-icons li i {
   color: #453e4f;
 }
 
+.social-icons li i:hover {
+  font-size: 3rem;
+}
+
 .contact-info {
   line-height: 3;
 }
+
 
 
 
