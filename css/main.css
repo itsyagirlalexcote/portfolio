@@ -361,6 +361,69 @@ header h2 {
     color: #4a4f3e;
 }
 
+/**** About - Millie Pic - button */
+.about-text .millie {
+  width: 90%;
+  max-width: 550px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  background: #a56876;
+  padding: 2em 1em 1em;
+  border-radius: 10px;
+}
+
+.modal img {
+  width: 75%;
+}
+
+.modal .show-modal {
+  display: block;
+}
+
+.modal .modal-x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #292929;
+  font-size: 0.5em;
+}
+
+.modal .modal-x:hover {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+button {
+  background: none;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+button:hover {
+  background-color:#fcd7d3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: 0;
+}
+
+
 /* PORTFOLIO - Skills and Projects */
 #projects,
 #skills {
