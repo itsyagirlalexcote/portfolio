@@ -766,6 +766,14 @@ Media Queries for Responsive Design.
       padding-top: 100px;
       padding-bottom: 80px;
     }
+
+    .skills-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      width: 60%;
+      flex-flow: row wrap;
+      margin: auto;
+    }
   
     footer {
       padding-top: 60px;
@@ -832,8 +840,15 @@ Media Queries for Responsive Design.
 
   /* Skills styles */
 
+  .skills-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    flex-flow: row wrap;
+    margin: auto;
+  }
 
-/* Footer styles */
+  /* Footer styles */
 
   .contact-info {
     line-height: 3;
