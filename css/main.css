@@ -413,21 +413,21 @@ footer .social-icons li i {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 0.5em;
+  font-size: 1em;
 }
 
 .modal-x {
   color: #ffffff;
-  font-size: 3rem;
+  size: 2rem;
 }
 
 .modal .modal-x:hover {
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 1.75rem;
 }
 
 button {
-  background: none;
+  background: #FFE8D6;
   border-radius: 10px;
   border-width: 1px;
 }
