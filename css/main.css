@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 ::-moz-selection {
@@ -757,6 +758,7 @@ Media Queries for Responsive Design.
   /* General styles */
   .content-wrapper {
     width: 80%;
+    max-width: 1200px;
   }
 
   /* font styles */
@@ -788,6 +790,7 @@ Media Queries for Responsive Design.
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row wrap;
+    width: 1200px;
   }
 
   .about-info {
@@ -811,6 +814,12 @@ Media Queries for Responsive Design.
     width: 60%;
     flex-flow: row wrap;
     margin: auto;
+  }
+
+  /* Project styles */
+
+  .project-item-wrapper {
+    justify-content: space-between;
   }
 
   /* Footer styles */
