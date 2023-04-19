@@ -418,15 +418,11 @@ footer .social-icons li i {
 
 .modal .modal-x:hover {
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .modal-x:hover {
-  color: #949494;
-}
-
-.modal-x i {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 button {
