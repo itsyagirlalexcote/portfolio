@@ -310,7 +310,7 @@ footer .social-icons li i {
 
 #about p,
 .skills {
-  width: 90%;
+  width: 80%;
   margin: 20px auto;
   text-align: left;
   max-width: 50ch;
@@ -438,6 +438,7 @@ button {
   background: #FFE8D6;
   border-radius: 10px;
   border-width: 1px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -503,8 +504,9 @@ button:focus {
 }
 
 .project-description {
-  margin: 0 0 30px 0;
-  text-align: justify;
+  margin: 20px auto;
+  text-align: left;
+  width: 80%;
 }
 
 .project-link {
@@ -521,7 +523,7 @@ button:focus {
 }
 
 .project-item {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -723,6 +725,10 @@ Media Queries for Responsive Design.
   .project-description {
     width: 95%;
   }
+
+  #about p, .skills {
+    width: 95%;
+}
 
   /* Footer */
 
