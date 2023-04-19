@@ -377,7 +377,7 @@ footer .social-icons li i {
   display: none;
   position: relative;
   background: #a56876;
-  padding: 1em 1em 1em;
+  padding: 1em;
   border-radius: 10px;
   width: 80%;
   margin: auto;
@@ -403,16 +403,30 @@ footer .social-icons li i {
   align-items: center;
   cursor: pointer;
   font-size: 1em;
+  color: #ffffff;
 }
 
 .modal-x {
-  color: #ffffff;
-  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
 }
 
 .modal .modal-x:hover {
   font-weight: bold;
   font-size: 1.75rem;
+}
+
+.modal-x:hover {
+  color: #949494;
+}
+
+.modal-x i {
+  font-size: 2rem;
 }
 
 button {
