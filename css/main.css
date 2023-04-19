@@ -205,6 +205,15 @@ header nav ul li {
   text-transform: uppercase;
 }
 
+nav #projects-link:hover,
+nav #skills-link:hover,
+nav #about-link:hover {
+  background-color: #f5c5c5;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+
 nav #contact-link {
   background-color: #F19494;
   padding: 10px 10px;
