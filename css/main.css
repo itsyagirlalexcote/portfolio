@@ -149,7 +149,7 @@ span {
 
 img {
   width: 65%;
-  max-width: 330px;
+  max-width: 275px;
 }
 
 figure {
@@ -809,6 +809,7 @@ Media Queries for Responsive Design.
 
   #profile-image {
     width: 85%;
+    max-width: 330px;
   }
 
   .about-wrapper {
