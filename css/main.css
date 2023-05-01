@@ -150,7 +150,7 @@ span {
 img {
   width: 65%;
   max-width: 275px;
-}
+} 
 
 figure {
   margin: 20px 0 20px 0;
@@ -726,9 +726,10 @@ Media Queries for Responsive Design.
     width: 95%;
   }
 
-  #about p, .skills {
+  #about p,
+  .skills {
     width: 95%;
-}
+  }
 
   /* Footer */
 
